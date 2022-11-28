@@ -1,0 +1,44 @@
+.section__porfolio {
+    
+}
+
+.portfolio {
+    background: linear-gradient(to bottom, #3a5f9a,#688dc8);
+    padding: 100px 5.4rem;
+
+    &__header {
+        display: flex;
+        justify-content: flex-start;
+        & > h3 {
+            
+        }
+    }
+
+    &__inner {
+        background: $white;
+        border: 2px solid $white;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    &__row {
+        display: flex;
+        gap: 5px;
+    }
+}
+
+.row {
+    &__item {
+        max-width: 345px;
+        height: 100%;
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

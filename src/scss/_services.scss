@@ -1,0 +1,46 @@
+.section__services {
+    
+}
+
+.services {
+    padding: 0px 5.4rem 100px 5.4rem;
+    background: #fff;
+
+    &__body {
+        display: flex;
+        align-items: baseline;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        max-width: 300px;
+        text-align: center;
+        border: 2px solid rgba(92, 91, 91, 0.5);
+        padding-bottom: 30px;
+        
+    }
+
+    &__title {
+        max-width: 100%;
+        & > h2 {
+            width: 100%;
+            font-size: 16px;
+            color: #fff;
+            /* line-height: 340%; */
+            padding: 10px 30px;
+            background: url(../img/s.png) no-repeat center;
+            background-size: 100%;
+        }
+    }
+
+    &__icon {
+        & > i {
+            color: $dark;
+            font-size: 45px;
+        }
+    }
+}

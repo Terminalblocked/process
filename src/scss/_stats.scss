@@ -1,0 +1,51 @@
+.section__stats {
+
+}
+
+.stats {
+    background-image: linear-gradient(to bottom, #549eae,#83cede);
+    padding: 0px;
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        background: url(../img/lightBlueBg.png) no-repeat;
+        background-size: 100%;
+        font-size: 16px;
+        padding: 15px 20px 15px 50px;
+        font-weight: 600;
+        color: $white;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0px;
+    }
+    &__item {
+        text-align: center;
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__number {
+        font-size: 30px;
+        color: $white;
+        &::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 2px;
+            background-color: $white;
+            margin: 30px auto;
+        }
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: $white;
+    }
+}
